@@ -1,0 +1,19 @@
+<h2>Lot: {{targetObject.id.chainId}}</h2>
+<h2>Id: {{targetObject.id.qrCode}}</h2>
+<ol>{% for traceLot in trace.traceProdLots %}
+    <li>{{traceLot.startDate| dateTime}} {{traceLot.currentState | translate('states')}} {% if
+        traceLot.processingProperties.afterWeight>0 %}({{traceLot.processingProperties.afterWeight | weight }}){% endif
+        %}
+    </li>
+    {% endfor %}
+</ol>
+
+Origin:
+<ol>
+    <li>{{'productionFacility' | translate('fields')}}: {{trace.originProperties.productionFacility.label}}</li>
+    <li>{{'origingeolot' | translate('fields')}}: {% for geolot in trace.originProperties.geoLots %}{{geolot.label}},{%
+        endfor %}
+    </li>
+    <li>{{'variety' | translate('fields')}}: {{trace.originProperties.variety.label}}</li>
+    <li>{{'harvestDate' | translate('fields')}} {{trace.originProperties.collectionDate|date}}</li>
+</ol>
