@@ -7,7 +7,6 @@
     {% endfor -%}
 </ol>
 
-Origin:
 <ol>
     <li>{{'productionFacility' | translate('fields')}}: {{trace.originProperties.productionFacility.label}}</li>
     <li>{{'origingeolot' | translate('fields')}}: {% for geolot in trace.originProperties.geoLots -%}{{geolot.label}},{%
