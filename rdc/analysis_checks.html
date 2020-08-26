@@ -1,22 +1,19 @@
-<h2>ANALYSISSSSLot: {{targetObject.id.chainId}}</h2>
-<h2>Id: {{targetObject.id.qrCode}}</h2>
-
-
+<h2>LOT: {{targetObject.id.chainId}}</h2>
 
 <ol>
-    <li>humidity: {{targetObject.processingProperties.properties.fermentPercentage}}</li>
-    <li>relatedCacaoMaterial: {{targetObject.processingProperties.properties.relatedCacaoMaterial}}</li>
-    <li>strangeMaterial: {{targetObject.processingProperties.properties.strangeMaterial}}</li>
-    <li>defectedBeans: {{targetObject.processingProperties.properties.defectedBeans}}</li>
-    <li>averageWeightIn100: {{targetObject.processingProperties.properties.averageWeightIn100}}</li>
-    <li>averageWeightIn100: {{targetObject.processingProperties.properties.averageWeightIn100}}</li>
-    <li>totalDefects: {{targetObject.processingProperties.properties.totalDefects}}</li>
-    <li>moldyBeans: {{targetObject.processingProperties.properties.moldyBeans}}</li>
-    <li>slatyBeans: {{targetObject.processingProperties.properties.slatyBeans}}</li>
-    <li>violetBeans: {{targetObject.processingProperties.properties.violetBeans}}</li>
-    <li>fermentedBeans: {{targetObject.processingProperties.properties.fermentedBeans}}</li>
-    <li>productTaste: {{targetObject.processingProperties.properties.productTaste}}</li>
+    <li>{{'%%productTaste%%' | translate('fields')}}: {{targetObject.processingProperties.properties.productTaste}}</li>
+    <li>{{'%%fermentedBeans%%' | translate('fields')}}: {{targetObject.processingProperties.properties.fermentedBeans}}</li>
+    <li>{{'%%violetBeans%%' | translate('fields')}}: {{targetObject.processingProperties.properties.violetBeans}}</li>
+    <li>{{'%%slatyBeans%%' | translate('fields')}}: {{targetObject.processingProperties.properties.slatyBeans}}</li>
+    <li>{{'%%moldyBeans%%' | translate('fields')}}: {{targetObject.processingProperties.properties.moldyBeans}}</li>
+    <li>{{'%%totalDefects%%' | translate('fields')}}: {{targetObject.processingProperties.properties.totalDefects}}</li>
+    <li>{{'%%averageWeightIn100%%' | translate('fields')}}: {{targetObject.processingProperties.properties.averageWeightIn100}}</li>
+    <li>{{'%%defectedBeans%%' | translate('fields')}}: {{targetObject.processingProperties.properties.defectedBeans}}</li>
+    <li>{{'%%relatedCacaoMaterial%%' | translate('fields')}}: {{targetObject.processingProperties.properties.relatedCacaoMaterial}}</li>
+    <li>{{'%%strangeMaterial%%' | translate('fields')}}: {{targetObject.processingProperties.properties.strangeMaterial}}</li>
+    <li>{{'%%productTaste%%' | translate('fields')}}: {{targetObject.processingProperties.productTaste}}</li>
 </ol>
 
-
-processingProperties.humidity
+labels.fields.productTaste_Label_1598383002839
+labels.fields.fermentedBeans_Label_1598383002768
+{{}}
