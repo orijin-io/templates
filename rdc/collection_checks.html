@@ -1,6 +1,13 @@
 <h2>LOT: {{targetObject.id.chainId}}</h2>
 
+<ol>
 
+    <li>{{'%%productionFacility%%' | translate('fields')}}: {{targetObject.originProperties.productionFacility.label}}</li>
+    <li>{{'%%geoLot%%' | translate('fields')}}: {{targetObject.originProperties.geoLots[].label | join(',', @)}}</li>
+    <li>{{'%%productionFacility%%' | translate('fields')}}: {{targetObject.productionFacility.label}}</li>
+    <li>{{'%%variety%%' | translate('fields')}}: {{targetObject.originProperties.variety.label}}</li>
+    <li>{{'%%harvestDate%%' | translate('fields')}} {{targetObject.originProperties.collectionDate|date}}</li>
+</ol>
 <ol>
     <li>ssssss: {{targetObject.processingProperties.properties.cleanCheck1}}</li>
     <li>{{'variety' | translate('fields')}}: {{targetObject.originProperties.variety.label}}</li>
@@ -13,7 +20,7 @@
     <li>{{'%%containerWeight3%%' | translate('fields')}}: {{targetObject.processingProperties.properties.containerWeight3}}</li>
     <li>{{'%%containerWeight4%%' | translate('fields')}}: {{targetObject.processingProperties.properties.containerWeight4}}</li>
     <li>{{'%%beforeWeight%%' | translate('fields')}}: {{targetObject.processingProperties.beforeWeight}}</li>
-
+    <li>{{'%%weightConversion%%' | translate('fields')}}: XXX</li>
     <li>{{'%%weightConversion%%' | translate('fields')}}: {{targetObject.processingProperties.properties.weightConversion}}</li>
     <li>{{'%%dryWeight%%' | translate('fields')}}: {{targetObject.processingProperties.properties.dryWeight}}</li>
     <li>{{'%%cacaoPrice%%' | translate('fields')}}: {{targetObject.processingProperties.properties.cacaoPrice}}</li>
