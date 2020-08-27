@@ -1,17 +1,24 @@
-<h2>LOT: {{targetObject.id.chainId}}</h2>
+<h4>LOT: {{targetObject.id.chainId}}</h4>
+<dl>
+  {% for traceLot in trace.traceProdLots %}
+  <dt>{{traceLot.currentState | translate('states')}}</dt>
+  <dd>{{traceLot.startDate| dateTime}}</dd>
+  {% if traceLot.processingProperties.afterWeight>0 %}
 
-<ol>{% for traceLot in trace.traceProdLots %}
-    <li>{{traceLot.startDate| dateTime}} {{traceLot.currentState | translate('states')}} {% if
-        traceLot.processingProperties.afterWeight>0 %}({{traceLot.processingProperties.afterWeight | weight }}){% endif -%}
-    </li>
-    {% endfor -%}
-</ol>
+  <dd>({{traceLot.processingProperties.afterWeight | weight }})</dd>
+  {% endif -%} {% endfor -%}
+</dl>
 
-<ol>
-    <li>{{'productionFacility' | translate('fields')}}: {{trace.originProperties.productionFacility.label}}</li>
-    <li>{{'origingeolot' | translate('fields')}}: {% for geolot in trace.originProperties.geoLots -%}{{geolot.label}},{%
-        endfor -%}
-    </li>
-    <li>{{'variety' | translate('fields')}}: {{trace.originProperties.variety.label}}</li>
-    <li>{{'harvestDate' | translate('fields')}} {{trace.originProperties.collectionDate|date}}</li>
-</ol>
+<dl>
+  <dt>{{'productionFacility' | translate('fields')}}:</dt>
+  <dd>{{trace.originProperties.productionFacility.label}}</dd>
+  <dt>{{'origingeolot' | translate('fields')}}</dt>
+  <dd>
+    {% for geolot in trace.originProperties.geoLots -%}{{geolot.label}},{%
+    endfor -%}
+  </dd>
+  <dt>{{'variety' | translate('fields')}}:</dt>
+  <dd>{{trace.originProperties.variety.label}}</dd>
+  <dt>{{'harvestDate' | translate('fields')}}</dt>
+  <dd>{{trace.originProperties.collectionDate|date}}</dd>
+</dl>

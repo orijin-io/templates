@@ -1,33 +1,29 @@
-<h2>LOT: {{targetObject.id.chainId}}</h2>
-
-<ol>
-
-    <li>{{'%%productionFacility%%' | translate('fields')}}: {{targetObject.originProperties.productionFacility.label}}</li>
-    <li>{{'%%geoLot%%' | translate('fields')}}: {{targetObject.originProperties.geoLots[].label | join(',', @)}}</li>
-    <li>{{'%%productionFacility%%' | translate('fields')}}: {{targetObject.productionFacility.label}}</li>
-    <li>{{'%%variety%%' | translate('fields')}}: {{targetObject.originProperties.variety.label}}</li>
-    <li>{{'%%harvestDate%%' | translate('fields')}} {{targetObject.originProperties.collectionDate|date}}</li>
-</ol>
-<ol>
-    <li>{{'%%cleanCheck1%%' | translate('fields')}}: {{targetObject.processingProperties.properties.cleanCheck1}}</li>
-    <li>{{'%%cleanCheck2%%' | translate('fields')}}: {{targetObject.processingProperties.properties.cleanCheck2}}</li>
-    <li>{{'%%cleanCheck3%%' | translate('fields')}}: {{targetObject.processingProperties.properties.cleanCheck3}}</li>
-    <li>{{'%%emptyContainerWeight%%' | translate('fields')}}: {{targetObject.processingProperties.properties.emptyContainerWeight}}</li>
-    <li>{{'%%containerWeight1%%' | translate('fields')}}: {{targetObject.processingProperties.properties.containerWeight1}}</li>
-    <li>{{'%%containerWeight2%%' | translate('fields')}}: {{targetObject.processingProperties.properties.containerWeight2}}</li>
-    <li>{{'%%containerWeight3%%' | translate('fields')}}: {{targetObject.processingProperties.properties.containerWeight3}}</li>
-    <li>{{'%%containerWeight4%%' | translate('fields')}}: {{targetObject.processingProperties.properties.containerWeight4}}</li>
-    <li>{{'%%beforeWeight%%' | translate('fields')}}: {{targetObject.processingProperties.beforeWeight}}</li>
-    <li>{{'%%weightConversion%%' | translate('fields')}}: XXX</li>
-    <li>{{'%%weightConversion%%' | translate('fields')}}: {{targetObject.processingProperties.properties.weightConversion}}</li>
-    <li>{{'%%dryWeight%%' | translate('fields')}}: {{targetObject.processingProperties.properties.dryWeight}}</li>
-    <li>{{'%%cacaoPrice%%' | translate('fields')}}: {{targetObject.processingProperties.properties.cacaoPrice}}</li>
-    <li>{{'%%cacaoPriceTotal%%' | translate('fields')}}: {{targetObject.processingProperties.properties.cacaoPriceTotal}}</li>
-    <li>{{'%%premiumPaid%%' | translate('fields')}}: {{targetObject.processingProperties.properties.premiumPaid}}</li>
-    <li>{{'%%transportationPrice%%' | translate('fields')}}: {{targetObject.processingProperties.properties.transportationPrice}}</li>
-    <li>{{'%%totalPaid%%' | translate('fields')}}: {{targetObject.processingProperties.properties.totalPaid}}</li>
-    <li>{{'%%paymentType%%' | translate('fields')}} : {{targetObject.processingProperties.properties.paymentType}}</li>
-</ol>
+<h4>LOT</dt><dd>{{targetObject.id.chainId}}</dd>
+<dl>
+    <dt>{{'%%productionFacility%%' | translate('fields')}}</dt><dd>{{targetObject.originProperties.productionFacility.label}}</dd>
+    <dt>{{'%%geoLot%%' | translate('fields')}}</dt><dd>{{targetObject.originProperties.geoLots[].label | join(',', @)}}</dd>
+    <dt>{{'%%productionFacility%%' | translate('fields')}}</dt><dd>{{targetObject.productionFacility.label}}</dd>
+    <dt>{{'%%variety%%' | translate('fields')}}</dt><dd>{{targetObject.originProperties.variety.label}}</dd>
+    <dt>{{'%%harvestDate%%' | translate('fields')}} {{targetObject.originProperties.collectionDate|date}}</li>
+    <dt>{{'%%cleanCheck1%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cleanCheck1}}</dd>
+    <dt>{{'%%cleanCheck2%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cleanCheck2}}</dd>
+    <dt>{{'%%cleanCheck3%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cleanCheck3}}</dd>
+    <dt>{{'%%emptyContainerWeight%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.emptyContainerWeight}}</dd>
+    <dt>{{'%%containerWeight1%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight1}}</dd>
+    <dt>{{'%%containerWeight2%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight2}}</dd>
+    <dt>{{'%%containerWeight3%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight3}}</dd>
+    <dt>{{'%%containerWeight4%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight4}}</dd>
+    <dt>{{'%%beforeWeight%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.beforeWeight}}</dd>
+    <dt>{{'%%weightConversion%%' | translate('fields')}}</dt><dd>XXX</dd>
+    <dt>{{'%%weightConversion%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.weightConversion}}</dd>
+    <dt>{{'%%dryWeight%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.dryWeight}}</dd>
+    <dt>{{'%%cacaoPrice%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cacaoPrice}}</dd>
+    <dt>{{'%%cacaoPriceTotal%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cacaoPriceTotal}}</dd>
+    <dt>{{'%%premiumPaid%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.premiumPaid}}</dd>
+    <dt>{{'%%transportationPrice%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.transportationPrice}}</dd>
+    <dt>{{'%%totalPaid%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.totalPaid}}</dd>
+    <dt>{{'%%paymentType%%' | translate('fields')}} </dt><dd>{{targetObject.processingProperties.properties.paymentType}}</dd>
+</dl>
 
 
 
