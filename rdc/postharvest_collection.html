@@ -1,11 +1,11 @@
 <img width="100" height="100" src="http://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{targetObject.id.chainId}}" />
-<h4>LOT</dt><dd>{{targetObject.id.chainId}}</dd>
+<h4>LOT {{targetObject.id.chainId}}</h4>
 <dl>
     <dt>{{'%%productionFacility%%' | translate('fields')}}</dt><dd>{{targetObject.originProperties.productionFacility.label}}</dd>
     <dt>{{'%%geoLot%%' | translate('fields')}}</dt><dd>{{targetObject.originProperties.geoLots[].label | join(',', @)}}</dd>
     <dt>{{'%%productionFacility%%' | translate('fields')}}</dt><dd>{{targetObject.productionFacility.label}}</dd>
     <dt>{{'%%variety%%' | translate('fields')}}</dt><dd>{{targetObject.originProperties.variety.label}}</dd>
-    <dt>{{'%%harvestDate%%' | translate('fields')}} {{targetObject.originProperties.collectionDate|date}}</li>
+    <dt>{{'%%harvestDate%%' | translate('fields')}} {{targetObject.originProperties.collectionDate|date}}</dd>
     <dt>{{'%%cleanCheck1%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cleanCheck1}}</dd>
     <dt>{{'%%cleanCheck2%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cleanCheck2}}</dd>
     <dt>{{'%%cleanCheck3%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cleanCheck3}}</dd>
@@ -24,6 +24,28 @@
     <dt>{{'%%totalPaid%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.totalPaid}}</dd>
     <dt>{{'%%paymentType%%' | translate('fields')}} </dt><dd>{{targetObject.processingProperties.properties.paymentType}}</dd>
 </dl>
+
+conversionFactor
+productionFacility
+origingeolot
+collectionFacility
+checkCleanTruck
+checkNoOil
+checkNoToxins
+containerWeightEmpty
+containerWeight1
+containerWeight2
+containerWeight3
+containerWeight4
+beforeWeight
+weightConversion
+dryWeight
+cacaoPrice
+cacaoPriceTotal
+premiumPaid
+transportationPrice
+totalPaid
+paymentType
 
 
 
