@@ -1,0 +1,11 @@
+<img width="100" height="100" src="http://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{targetObject.id.chainId}}" />
+<h4>LOT {{targetObject.id.chainId}}</h4>
+
+<dl>
+	<dt>{{'quantityLoaded_Label_1598690426575' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.quantityLoaded}}</dd>
+	<dt>{{'quantityUnloaded_Label_1598690426585' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.quantityUnloaded}}</dd>
+	<dt>{{'timeConching_Label_1598690426511' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.timeConching}}</dd>
+	<dt>{{'timeMixing_Label_1598690426522' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.timeMixing}}</dd>
+	<dt>{{'timeRefining_Label_1598690426534' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.timeRefining}}</dd>
+	<dt>{{'granulometry_Label_1598690426629' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.granulometry}}</dd>
+</dl>

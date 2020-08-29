@@ -1,0 +1,10 @@
+<img width="100" height="100" src="http://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{targetObject.id.chainId}}" />
+<h4>LOT {{targetObject.id.chainId}}</h4>
+
+<dl>
+	<dt>{{'sourceProdLot' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.sourceProdLot}}</dd>
+	<dt>{{'classificationType_Label_1598690426086' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.classificationType}}</dd>
+	<dt>{{'beforeWeight_Label_1598690425483' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.beforeWeight}}</dd>
+	<dt>{{'afterWeight_Label_1598690426121' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.afterWeight}}</dd>
+	<dt>{{'activityPeriod_Label_1598690426138' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.activityPeriod}}</dd>
+</dl>

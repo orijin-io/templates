@@ -1,12 +1,17 @@
 <img width="100" height="100" src="http://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{targetObject.id.chainId}}" />
 <h4>LOT: {{targetObject.id.chainId}}</h4>
 <dl>
-    <dt>{{'%%isNational%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.isNational}}</dd>
-    <dt>{{'%%isWet%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.isWet}}</dd>
-    <dt>{{'%%isClear%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.isClear}}</dd>
-    <dt>{{'%%isSick%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.isSick}}</dd>
-    <dt>{{'%%isFermented%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.isFermented}}</dd>
+    <dt>{{'%%checkNational%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkNational}}</dd>
+    <dt>{{'%%checkWet%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkWet}}</dd>
+    <dt>{{'%%checkClear%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkClear}}</dd>
+    <dt>{{'%%checkSick%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkSick}}</dd>
+    <dt>{{'%%checkFermented%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkFermented}}</dd>
 </dl>
+
+
+
+
+
 
 
 

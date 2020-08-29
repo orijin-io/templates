@@ -4,7 +4,6 @@
     <dt>{{'%%productionFacility%%' | translate('fields')}}</dt><dd>{{targetObject.originProperties.productionFacility.label}}</dd>
     <dt>{{'%%collectionFacility%%' | translate('fields')}}</dt><dd>{{targetObject.productionFacility.label}}</dd>
     <dt>{{'%%geoLot%%' | translate('fields')}}</dt><dd>{{targetObject.originProperties.geoLots[].label | join(',', @)}}</dd>
-    <dt>{{'%%productionFacility%%' | translate('fields')}}</dt><dd>{{targetObject.productionFacility.label}}</dd>
     <dt>{{'%%variety%%' | translate('fields')}}</dt><dd>{{targetObject.originProperties.variety.label}}</dd>
     <dt>{{'%%harvestDate%%' | translate('fields')}} {{targetObject.originProperties.collectionDate|date}}</dd>
     <dt>{{'%%checkCleanTruck%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkCleanTruck}}</dd>
@@ -16,7 +15,6 @@
     <dt>{{'%%containerWeight3%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight3}}</dd>
     <dt>{{'%%containerWeight4%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight4}}</dd>
     <dt>{{'%%beforeWeight%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.beforeWeight}}</dd>
-    <dt>{{'%%weightConversion%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.weightConversion}}</dd>
     <dt>{{'%%dryWeight%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.dryWeight}}</dd>
     <dt>{{'%%cacaoPrice%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cacaoPrice}}</dd>
     <dt>{{'%%cacaoPriceTotal%%' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cacaoPriceTotal}}</dd>
