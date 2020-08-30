@@ -4,7 +4,7 @@
 <dl>
 	<dt>productionFacility</dt><dd>{{targetObject.originProperties.productionFacility.label}}</dd>
 	<dt>variety</dt><dd>{{targetObject.originProperties.variety.label}}</dd>
-	<dt>Plots</dt><dd>{% for geolot in targetObject.originProperties.geoLots -%}{{geolot.label}},{% endfor -%}</dd>
+	<dt>Plots</dt><dd>{% for plot in targetObject.originProperties.plots -%}{{plot.label}},{% endfor -%}</dd>
 	<dt>Clean truck</dt><dd>{{targetObject.processingProperties.properties.checkCleanTruck | translatedBoolean}}</dd>
 	<dt>No Oil</dt><dd>{{targetObject.processingProperties.properties.checkNoOil | translatedBoolean}}</dd>
 	<dt>No Toxins</dt><dd>{{targetObject.processingProperties.properties.checkNoToxins | translatedBoolean}}</dd>

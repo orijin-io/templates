@@ -5,15 +5,15 @@
   <dt>{{traceLot.currentState | translate('states')}}</dt>
   <dd>{{traceLot.startDate| dateTime}}</dd>
   <dd>{% if traceLot.processingProperties.afterWeight>0 %}
-        ({{traceLot.processingProperties.afterWeight | weight }})
+        ({{traceLot.processingProperties.afterWeight | weight('Lb') }})
   {% endif -%}
   </dd>
 {% endfor -%}
   <dt>{{'productionFacility' | translate('fields')}}:</dt>
   <dd>{{trace.originProperties.productionFacility.label}}</dd>
-  <dt>{{'origingeolot' | translate('fields')}}</dt>
+  <dt>{{'originplot' | translate('fields')}}</dt>
   <dd>
-    {% for geolot in trace.originProperties.geoLots -%}{{geolot.label}},{%
+    {% for plot in trace.originProperties.plots -%}{{plot.label}},{%
     endfor -%}
   </dd>
   <dt>{{'variety' | translate('fields')}}</dt>
