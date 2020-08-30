@@ -1,0 +1,25 @@
+<img width="100" height="100" src="http://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{targetObject.id.chainId}}" />
+<h4>LOT: {{targetObject.id.chainLabel}}</h4>
+
+<dl>
+	<dt>productionFacility</dt><dd>{{targetObject.originProperties.productionFacility.label}}</dd>
+	<dt>variety</dt><dd>{{targetObject.originProperties.variety.label}}</dd>
+	<dt>Plots</dt><dd>{% for geolot in targetObject.originProperties.geoLots -%}{{geolot.label}},{% endfor -%}</dd>
+	<dt>Clean truck</dt><dd>{{targetObject.processingProperties.properties.checkCleanTruck | translatedBoolean}}</dd>
+	<dt>No Oil</dt><dd>{{targetObject.processingProperties.properties.checkNoOil | translatedBoolean}}</dd>
+	<dt>No Toxins</dt><dd>{{targetObject.processingProperties.properties.checkNoToxins | translatedBoolean}}</dd>
+	<dt>Empty container weight</dt><dd>{{targetObject.processingProperties.properties.containerWeightEmpty | weight}}</dd>
+	<dt>Container Weight1</dt><dd>{{targetObject.processingProperties.properties.containerWeight1 | weight}}</dd>
+	<dt>Container Weight2</dt><dd>{{targetObject.processingProperties.properties.containerWeight2 | weight}}</dd>
+	<dt>Container Weight3</dt><dd>{{targetObject.processingProperties.properties.containerWeight3 | weight}}</dd>
+	<dt>Container Weight4</dt><dd>{{targetObject.processingProperties.properties.containerWeight4 | weight}}</dd>
+	<dt>Baba Weight</dt><dd>{{targetObject.processingProperties.beforeWeight | weight}}</dd>
+	<dt>weightConversion</dt><dd>{{targetObject.processingProperties.properties.weightConversion}}</dd>
+	<dt>Dry Weight</dt><dd>{{targetObject.processingProperties.properties.dryWeight | weight}}</dd>
+	<dt>Cacao Price</dt><dd>${{targetObject.processingProperties.properties.cacaoPrice.amount}}</dd>
+	<dt>Cacao Price Total</dt><dd>${{targetObject.processingProperties.properties.cacaoPriceTotal| round}}</dd>
+	<dt>Premium Paid</dt><dd>${{targetObject.processingProperties.properties.premiumPaid| round}}</dd>
+	<dt>Transportation Price</dt><dd>${{targetObject.processingProperties.properties.transportationPrice| round}}</dd>
+	<dt>Total Paid</dt><dd>${{targetObject.processingProperties.properties.totalPaid | round}}</dd>
+	<dt>{{'paymentType_Label_1598690425567' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.paymentType| translate('lists.paymentType')}}</dd>
+</dl>

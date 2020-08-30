@@ -1,20 +1,18 @@
 <img width="100" height="100" src="http://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{targetObject.id.chainId}}" />
-<h4>LOT {{targetObject.id.chainId}}</h4>
+<h4>LOT: {{targetObject.id.chainLabel}}</h4>
 
 <dl>
-	<dt>{{'productionFacility_Label_1598690425366' | translate('fields')}}</dt><dd>{{targetObject.originProperties.productionFacility.label}}</dd>
-	<dt>{{'origingeolot_Label_1598690425378' | translate('fields')}}</dt><dd>{{targetObject.originProperties.geoLots[].label | join(',', @)}}</dd>
-	<dt>{{'collectionFacility_Label_1598690425389' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.collectionFacility}}</dd>
-	<dt>{{'checkCleanTruck_Label_1598690425403' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkCleanTruck}}</dd>
-	<dt>{{'checkNoOil_Label_1598690425413' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkNoOil}}</dd>
-	<dt>{{'checkNoToxins_Label_1598690425422' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkNoToxins}}</dd>
-	<dt>{{'containerWeightEmpty_Label_1598690425432' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeightEmpty}}</dd>
-	<dt>{{'containerWeight1_Label_1598690425442' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight1}}</dd>
+	<dt>productionFacility</dt><dd>{{targetObject.originProperties.productionFacility.label}}</dd>
+	<dt>Geolots</dt><dd>{{targetObject.originProperties.geoLots}}</dd>
+	<dt>Clean truck</dt><dd>{{targetObject.processingProperties.properties.checkCleanTruck}}</dd>
+	<dt>No Oil</dt><dd>{{targetObject.processingProperties.properties.checkNoOil}}</dd>
+	<dt>No Toxins</dt><dd>{{targetObject.processingProperties.properties.checkNoToxins}}</dd>
+	<dt>Empty container weight</dt><dd>{{targetObject.processingProperties.properties.containerWeightEmpty}}</dd>
+	<dt>containerWeight1</dt><dd>{{targetObject.processingProperties.properties.containerWeight1}}</dd>
 	<dt>{{'containerWeight2_Label_1598690425453' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight2}}</dd>
 	<dt>{{'containerWeight3_Label_1598690425463' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight3}}</dd>
 	<dt>{{'containerWeight4_Label_1598690425474' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight4}}</dd>
 	<dt>{{'beforeWeight_Label_1598690425483' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.beforeWeight}}</dd>
-	<dt>{{'weightConversion_Label_1598690425493' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.weightConversion}}</dd>
 	<dt>{{'dryWeight_Label_1598690425503' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.dryWeight}}</dd>
 	<dt>{{'cacaoPrice_Label_1598690425517' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cacaoPrice}}</dd>
 	<dt>{{'cacaoPriceTotal_Label_1598690425527' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cacaoPriceTotal}}</dd>
