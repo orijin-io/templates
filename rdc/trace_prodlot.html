@@ -1,5 +1,6 @@
-<img width="100" height="100" src="http://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{targetObject.id.chainId}}" />
+<img width="100" height="100" src="http://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{targetObject.id.qrCode}}" />
 <h4>LOT: {{targetObject.id.chainLabel}}</h4>
+
 <dl>
   {% for traceLot in trace.traceProdLots %}
   <dt>{{traceLot.currentState | translate('states')}}</dt>
@@ -9,13 +10,8 @@
   {% endif -%}
   </dd>
 {% endfor -%}
-  <dt>{{'productionFacility' | translate('fields')}}:</dt>
+  <dt>{{'farm' | translate('fields')}}</dt>
   <dd>{{trace.originProperties.productionFacility.label}}</dd>
-  <dt>{{'originplot' | translate('fields')}}</dt>
-  <dd>
-    {% for plot in trace.originProperties.plots -%}{{plot.label}},{%
-    endfor -%}
-  </dd>
   <dt>{{'variety' | translate('fields')}}</dt>
   <dd>{{trace.originProperties.variety.label}}</dd>
   <dt>{{'harvestDate' | translate('fields')}}</dt>
