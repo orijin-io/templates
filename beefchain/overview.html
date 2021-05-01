@@ -1,0 +1,17 @@
+<img width="100" height="100" src="http://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{targetObject.id.qrCode}}" />
+<h4>LOT: {{targetObject.id.chainLabel}}</h4>
+
+<dl>
+
+{% for traceLot in trace.traceProdLots %}
+
+
+  {% if traceLot.currentStatus=="COLLECTED" %}
+  <dl>
+      <dd>{{traceLot.startDate| dateTime}}</dd>
+  </dl>
+  {% endif -%}
+
+{% endfor -%}
+
+</dl>

@@ -1,0 +1,21 @@
+<h2>{{targetObject.id.chainLabel}}</h2>
+<ol>
+{% for traceLot in trace.traceProdLots %}
+<li>{{traceLot.startDate| date}} - {{traceLot.currentState | translate('states')}} - {{traceLot.processingProperties.afterWeight | weight("Lb") }}</li>
+
+<ol>{% for ae in traceLot.activityCompletionsInReverseOrder |sort(false, true, 'processingProperties.properties.productionFacility.label') %}
+
+{% if ae.aEType=="Multi" %}<li>{{ ae.processingProperties.properties.productionFacility.label }} - {{ae.processingProperties.properties.afterWeight | weight("Lb")}} - {{ae.processingProperties.properties.money.amount}}$
+</li>{% endif -%}
+{% endfor -%}
+</ol>
+{% endfor -%}
+
+</ol>
+
+Origin:
+<ol>
+<li>{{'productionFacility' | translate('fields')}}: {{trace.originProperties.productionFacility.label}}</li>
+<li>{{'variety' | translate('fields')}}: {{trace.originProperties.variety.label}}</li>
+<li>{{'harvestDate' | translate('fields')}} {{trace.originProperties.collectionDate|date}}</li>
+</ol>

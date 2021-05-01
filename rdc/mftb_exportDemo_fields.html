@@ -1,0 +1,30 @@
+<img width="100" height="100" src="http://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{targetObject.id.qrCode}}" />
+<h4>LOT {{targetObject.id.chainId}}</h4>
+<h4>LOT {{targetObject.id.id}}</h4>
+
+<dl>
+	<dt>collectionFacility</dt><dd>{{targetObject.processingProperties.properties.collectionFacility.label}}</dd>
+	<dt>collectionDate</dt><dd>{{targetObject.originProperties.collectionDate| dateTime}}</dd>
+	<dt>farm</dt><dd>{{targetObject.originProperties.productionFacility.label}}</dd>
+	<dt>variety</dt><dd>{{targetObject.originProperties.variety.label}}</dd>
+	<dt>beforeWeight</dt><dd>{{targetObject.processingProperties.beforeWeigh| weight('Lb')}}</dd>
+	<dt>collectionCoordinatesLat</dt><dd>{{targetObject.processingProperties.properties.collectionCoordinatesLat}}</dd>
+	<dt>collectionCoordinatesLon</dt><dd>{{targetObject.processingProperties.properties.collectionCoordinatesLon}}</dd>
+
+	<dt>premiumPaid</dt><dd>{{targetObject.processingProperties.properties.premiumPaid}}</dd>
+	<dt>totalPaid</dt><dd>{{targetObject.processingProperties.properties.totalPaid}}</dd>
+	<dt>fermentationDays</dt><dd>{{targetObject.processingProperties.properties.fermentationDays}}</dd>
+	<dt>dryingDays</dt><dd>{{targetObject.processingProperties.properties.dryingDays}}</dd>
+	<dt>classificationDate</dt><dd>{{targetObject.processingProperties.properties.classificationDate| dateTime}}</dd>
+	<dt>roastingLevel</dt><dd>{{targetObject.processingProperties.properties.roastingLevel}}</dd>
+	<dt>productType</dt><dd>{{targetObject.processingProperties.properties.productType}}</dd>
+	<dt>cacaoPercentage</dt><dd>{{targetObject.processingProperties.properties.cacaoPercentage}}</dd>
+	<dt>weightNibs</dt><dd>{{targetObject.processingProperties.properties.weightNibs}}</dd>
+	<dt>percentageNibs</dt><dd>{{targetObject.processingProperties.properties.percentageNibs}}</dd>
+	<dt>weightButter</dt><dd>{{targetObject.processingProperties.properties.weightButter}}</dd>
+	<dt>percentageButter</dt><dd>{{targetObject.processingProperties.properties.percentageButter}}</dd>
+	<dt>weightPanela</dt><dd>{{targetObject.processingProperties.properties.weightPanela}}</dd>
+	<dt>percentagePanela</dt><dd>{{targetObject.processingProperties.properties.percentagePanela}}</dd>
+</dl>
+
+

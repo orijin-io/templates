@@ -1,0 +1,73 @@
+<img width="100" height="100" src="http://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{targetObject.id.chainId}}" />
+<h4>LOT {{targetObject.id.chainId}}</h4>
+
+<dl>
+	<dt>{{'productionFacility_Label_1598690425366' | translate('fields')}}</dt><dd>{{targetObject.originProperties.productionFacility.label}}</dd>
+	<dt>{{'originplot_Label_1598690425378' | translate('fields')}}</dt><dd>{{targetObject.originProperties.plots[].label | join(',', @)}}</dd>
+	<dt>{{'collectionFacility_Label_1598690425389' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.collectionFacility}}</dd>
+	<dt>{{'checkCleanTruck_Label_1598690425403' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkCleanTruck}}</dd>
+	<dt>{{'checkNoOil_Label_1598690425413' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkNoOil}}</dd>
+	<dt>{{'checkNoToxins_Label_1598690425422' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkNoToxins}}</dd>
+	<dt>{{'containerWeightEmpty_Label_1598690425432' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeightEmpty}}</dd>
+	<dt>{{'containerWeight1_Label_1598690425442' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight1}}</dd>
+	<dt>{{'containerWeight2_Label_1598690425453' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight2}}</dd>
+	<dt>{{'containerWeight3_Label_1598690425463' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight3}}</dd>
+	<dt>{{'containerWeight4_Label_1598690425474' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.containerWeight4}}</dd>
+	<dt>{{'beforeWeight_Label_1598690425483' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.beforeWeight}}</dd>
+	<dt>{{'weightConversion_Label_1598690425493' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.weightConversion}}</dd>
+	<dt>{{'dryWeight_Label_1598690425503' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.dryWeight}}</dd>
+	<dt>{{'cacaoPrice_Label_1598690425517' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cacaoPrice}}</dd>
+	<dt>{{'cacaoPriceTotal_Label_1598690425527' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.cacaoPriceTotal}}</dd>
+	<dt>{{'premiumPaid_Label_1598690425536' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.premiumPaid}}</dd>
+	<dt>{{'transportationPrice_Label_1598690425547' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.transportationPrice}}</dd>
+	<dt>{{'totalPaid_Label_1598690425558' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.totalPaid}}</dd>
+	<dt>{{'paymentType_Label_1598690425567' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.paymentType}}</dd>
+</dl>
+<dl>
+	<dt>{{'checkNational_Label_1598690425587' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkNational}}</dd>
+	<dt>{{'checkWet_Label_1598690425597' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkWet}}</dd>
+	<dt>{{'checkClear_Label_1598690425607' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkClear}}</dd>
+	<dt>{{'checkSick_Label_1598690425618' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkSick}}</dd>
+	<dt>{{'checkFermented_Label_1598690425631' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkFermented}}</dd>
+</dl>
+<dl>
+	<dt>{{'temperature_Label_1598690425681' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.temperature}}</dd>
+	<dt>{{'ph_Label_1598690425699' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.ph}}</dd>
+	<dt>{{'brix_Label_1598690425712' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.brix}}</dd>
+</dl>
+<dl>
+	<dt>{{'temperature_Label_1598690425681' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.temperature}}</dd>
+	<dt>{{'ph_Label_1598690425699' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.ph}}</dd>
+	<dt>{{'checkFermentedBeans_Label_1598690425755' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkFermentedBeans}}</dd>
+</dl>
+<dl>
+	<dt>{{'temperature_Label_1598690425681' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.temperature}}</dd>
+	<dt>{{'ph_Label_1598690425699' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.ph}}</dd>
+	<dt>{{'checkFermentedBeans_Label_1598690425755' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkFermentedBeans}}</dd>
+</dl>
+<dl>
+	<dt>{{'temperature_Label_1598690425681' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.temperature}}</dd>
+	<dt>{{'ph_Label_1598690425699' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.ph}}</dd>
+	<dt>{{'checkFermentedBeans_Label_1598690425755' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkFermentedBeans}}</dd>
+</dl>
+<dl>
+	<dt>{{'dryingType_Label_1598690425865' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.dryingType}}</dd>
+	<dt>{{'fermentationGrade_Label_1598690425876' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.fermentationGrade}}</dd>
+</dl>
+<dl>
+	<dt>{{'humidity_Label_1598690425904' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.humidity}}</dd>
+	<dt>{{'fermentedBeansPercentage_Label_1598690425915' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.fermentedBeansPercentage}}</dd>
+	<dt>{{'violetBeansPercentage_Label_1598690425927' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.violetBeansPercentage}}</dd>
+	<dt>{{'slatyBeansPercentage_Label_1598690425937' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.slatyBeansPercentage}}</dd>
+	<dt>{{'moldyBeansPercentage_Label_1598690425947' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.moldyBeansPercentage}}</dd>
+	<dt>{{'totalDefectsPercentage_Label_1598690425959' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.totalDefectsPercentage}}</dd>
+	<dt>{{'averageWeightIn100_Label_1598690425969' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.averageWeightIn100}}</dd>
+	<dt>{{'defectedBeansCount_Label_1598690425979' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.defectedBeansCount}}</dd>
+	<dt>{{'checkRelatedCacaoMaterial_Label_1598690425990' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkRelatedCacaoMaterial}}</dd>
+	<dt>{{'checkStrangeMaterial_Label_1598690426000' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.checkStrangeMaterial}}</dd>
+	<dt>{{'productTaste_Label_1598690426011' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.properties.productTaste}}</dd>
+</dl>
+<dl>
+	<dt>{{'sackType_Label_1598690426035' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.sackType}}</dd>
+	<dt>{{'beforeWeight_Label_1598690425483' | translate('fields')}}</dt><dd>{{targetObject.processingProperties.beforeWeight}}</dd>
+</dl>
